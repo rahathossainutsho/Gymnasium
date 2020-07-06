@@ -1,0 +1,1400 @@
+ 
+/*
+------------------
+Template Name: Gymnasium Template
+Author: M. M. Rahat Hossain Utsho
+Author Email: rahathossainutsho21a@gmail.com
+Version:---
+----------------
+
+----------------
+Table of Content
+----------------
+1.header-part
+2.banner-part
+3.about-part
+4.our-gallery-part
+5.our-team-part
+6.testimonial-part
+7.membership-part
+8.client-part
+9.class-part
+10.sponsor-part
+11.footer-part
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+    margin: 0;
+}
+
+a,a:hover,a:focus {
+    text-decoration: none;
+}
+
+.title{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #222222;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.title h3:after{
+    background: url(../images/section-title/title-below-shape.png) no-repeat center;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom:-10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+}
+
+/*=====================================================
+           header-part (navbar) css start
+=====================================================*/
+
+.header-part{
+    z-index: 9999;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+
+.navbar{
+    background: rgba(53, 53, 53, .25);
+    padding: 0;
+}
+
+.navbar .navbar-brand{
+    padding: 10px 30px;
+    background: #323232;
+    position: absolute;
+    transform: skewX(-30deg);
+}
+
+.navbar .navbar-brand img{
+    transform: skewX(30deg);
+}
+
+.navbar ul li a{
+    padding: 15px 10px;
+    background: transparent;
+    margin-left: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    transition: .4s;
+    position: relative;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 400;
+}
+
+.navbar .navbar-toggler{
+    outline: none;
+}
+
+.navbar .navbar-toggler i{
+    color: #fff;
+    z-index: 999;
+}
+
+.navbar ul li a:hover{
+    background: #fff;
+    color: #222222;
+}
+
+.navbar ul li a:after{
+    background: #e23e38;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    transition: .4s;
+}
+
+.navbar ul li a:hover:after{
+    width: 50%;
+}
+
+.navbar ul li .active:after{
+    width: 100%;
+}
+
+.navbar ul li .active{
+    background: #fff;
+    color: #222222;
+}
+
+.navbar ul li .active:hover:after{
+    width:100%;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: manu .5s;
+}
+
+@keyframes manu{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.fixed .navbar{
+    background: rgba(53, 53, 53, .65);
+}
+
+.fixed .navbar .navbar-brand{
+    position: static;
+    padding:0px 30px;
+}
+
+/*=====================================================
+           header-part (navbar) css end
+=====================================================*/
+
+/*=====================================================
+           banner-part css start
+=====================================================*/
+
+#banner-part ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+#banner-part ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#banner-part ul li button{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0;
+    outline: none;
+}
+
+#banner-part ul .slick-active button{
+    background: #e23e38;
+    border-color: #e23e38;
+} 
+
+#banner-part .prev{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 38px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    transition: .2s;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#banner-part .prev:hover{
+    color:#e23e38;
+    border-color:#e23e38;
+}
+
+#banner-part .next{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 38px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    transition: .2s;
+    cursor: pointer;
+}
+
+#banner-part .next:hover{
+    color:#e23e38;
+    border-color:#e23e38;
+}
+
+#banner-part .banner-one{
+    background: url(../images/banner-part/banner-bg.png) no-repeat center;
+}
+
+#banner-part .banner-two{
+    background: url(../images/banner-part/banner-bg-2.png) no-repeat center;
+}
+
+#banner-part .banner-three{
+    background: url(../images/banner-part/banner-bg-3.png) no-repeat center;
+}
+
+#banner-part .banner{
+    background-size: cover;
+    outline: none;
+}
+
+#banner-part .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding-top: 310px;
+    padding-bottom: 150px;
+}
+
+#banner-part .overlay .text{
+    width: 590px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#banner-part .text-left .text{
+    text-align: left;
+    margin: 0;
+}
+
+#banner-part .overlay .text h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+
+#banner-part .overlay .text h3 .line-u-l{
+    height:3px;
+    width: 172px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: #e23e38;
+}
+
+#banner-part .overlay .text h3 .line-u-r{
+    height:3px;
+    width: 120px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: #e23e38;
+    line-height: 24px;
+}
+
+#banner-part .overlay .text h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #e23e38;
+    margin-bottom: 30px;
+}
+
+#banner-part .overlay .text p{
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: #f7f7f7;
+}
+
+#banner-part .text-left .text p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#banner-part .overlay .text .ancore{
+    width: 100%;
+    position: relative;
+}
+
+#banner-part .overlay .text a{
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #fff;
+    background: #e23e38;
+    border: 1px solid #e23e38;
+    transition: .4s;
+    transform: translateY(50%);
+    outline: 0;
+}
+
+#banner-part .overlay .text .right{
+    margin-left: 20px;
+}
+
+#banner-part .overlay .text a:hover{
+    background: transparent;
+    border-color: #fff;
+}
+
+#banner-part .overlay .text .ancore .line-d-l{
+    height:3px;
+    width:52px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e23e38;
+}
+
+#banner-part .overlay .text .ancore .line-d-r{
+    height:3px;
+    width:22px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #e23e38;
+}
+
+#banner-part .overlay .text .line-l{
+    height: 100%;
+    width: 3px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e23e38;
+}
+
+#banner-part .overlay .text .line-r{
+    height: 100%;
+    width: 3px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e23e38;
+}
+
+/*=====================================================
+           banner-part css end
+=====================================================*/
+
+/*=====================================================
+           about-part css start
+=====================================================*/
+
+#about-part{
+    padding-top:100px;
+}
+
+#about-part .title{
+    margin-bottom:30px;
+}
+
+#about-part .video-part{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#about-part .video-part img{
+    transition: .8s;
+    width: 100%;
+}
+
+#about-part .video-part:hover img{
+    transform: scale(1.3);
+}
+
+#about-part .video-part .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.6);
+}
+
+#about-part .video-part .overlay i{
+    font-size: 56px;
+    color: #e23e38;
+    transition: .4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#about-part .video-part .overlay i:hover{
+    color: #fff;
+}
+
+
+.vbox-share{
+    display: none;
+}
+
+.vbox-close{
+    right:24.5%;
+    top: 15%;
+    font-size: 35px;
+}
+
+.vbox-close:hover{
+    color: red!important;
+}
+
+#about-part .details-part p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #222222;
+    line-height: 24px;
+}
+
+#about-part .details-part .up{
+    margin-bottom:20px;
+}
+
+/*=====================================================
+                 about-part css end
+=====================================================*/
+
+/*=====================================================
+               our-gallery-part css start
+=====================================================*/
+
+#gallery-part{
+    padding-top: 100px;
+}
+
+#gallery-part .gallery{
+    background: url(../images/gallery-part/gallery-part-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+#gallery-part .gallery .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0,.6);
+    padding-top: 30px;
+}
+
+#gallery-part .gallery .overlay .images{
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery-part .gallery .overlay .images .img{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#gallery-part .gallery .overlay .images .img img{
+    width: 100%;
+}
+
+#gallery-part .gallery .overlay .images .img .hover{
+    width: 100%;
+    height: 100%;
+    background:rgba(226, 62, 56,.5);
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255,.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: .4s;
+    transform: scale(0);
+}
+
+#gallery-part .gallery .overlay .images .img .hover i{
+    color: #fff;
+    font-size: 30px;
+}
+
+#gallery-part .gallery .overlay .images .img:hover .hover{
+    transform: scale(.94);
+}
+
+.vbox-close{
+    top: 14%;
+}
+
+.vbox-prev{
+    left: 33%;
+}
+
+.vbox-prev span{
+    border-top-color: #fff !important; 
+    border-right-color: #fff !important; 
+}
+
+.vbox-prev:hover span{
+    border-top-color: #e23e38 !important; 
+    border-right-color: #e23e38 !important; 
+}
+
+.vbox-next{
+    right: 33%;
+}
+
+.vbox-next span{
+    border-top-color: #fff !important; 
+    border-right-color: #fff !important; 
+}
+
+.vbox-next:hover span{
+    border-top-color: #e23e38 !important; 
+    border-right-color: #e23e38 !important; 
+}
+
+/*=====================================================
+                our-gallery-part css end
+=====================================================*/
+
+/*=====================================================
+                our-team-part css start
+=====================================================*/
+
+#team-part{
+    padding-top:100px;
+    margin-bottom: -50px;
+}
+
+#team-part .title{
+    margin-bottom: 88px;
+}
+
+#team-part .team-member{
+    padding-bottom: 50px;
+}
+
+#team-part .team-member .img{
+    position: relative;
+    transition: .4s;
+}
+
+#team-part .team-member .img img{
+    width: 100%;
+}
+
+#team-part .team-member .img .overlay{
+    width: 100%;
+    height: 100%;
+    background:rgba(226, 62, 56,.5);
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255,.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    transition: .4s;
+    transform: scale(0);
+}
+
+#team-part .team-member:hover .img .overlay{
+    transform: scale(.92);
+}
+
+
+#team-part .team-member .img .overlay .icon{
+    width: 30px;
+    margin-right: 10px;
+}
+
+#team-part .team-member .img .overlay .icon i{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 1;
+    color: #fff;
+    transition: .4s;
+    margin: 5px 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+#team-part .team-member .img .overlay .icon i:hover{
+    background: #fff;
+    color: #1da0f2;
+}
+
+#team-part .team-member .text{
+    width: 100%;
+    border: 1px solid transparent;
+    border-top: 0;
+    padding: 20px 0;
+    transition: .4s;
+}
+
+#team-part .team-member .text h3{
+    font-size: 16px;
+    font-weight:400;
+    text-align: center;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+#team-part .team-member .text h5{
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: center;
+    color: #444444;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 14px;
+}
+
+#team-part .team-member .text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #4444444;
+    line-height: 24px;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: -20px;
+    transition: .4s;
+    opacity: 0;
+    height: 0;
+}
+
+#team-part .team-member:hover .img{
+    margin-top: -44px;
+}
+
+
+#team-part .team-member:hover .text p{
+    margin-top: 0;
+    opacity: 1;
+    height: auto;
+}
+
+#team-part .team-member:hover .text{
+    border-color: #dddddd;
+}
+
+/*=====================================================
+                our-team-part css end
+=====================================================*/
+
+/*=====================================================
+                testmonial-part css start
+=====================================================*/
+
+#testimonial-part{
+    padding-top: 100px;
+}
+
+#testimonial-part .testimonial{
+    background: url(../images/testimonial-part/testimonial-part-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+#testimonial-part .testimonial .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    padding: 30px 0;
+}
+
+#testimonial-part .container{
+    padding: 0;
+}
+
+#testimonial-part .testimonial ul{
+    text-align: center;
+}
+
+#testimonial-part .testimonial ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#testimonial-part .testimonial ul li button{
+    outline: 0;
+    border:1px solid #fff;
+    border-radius: 50%;
+    background:transparent;
+    font-size: 0;
+    height: 16px;
+    width:16px;
+}
+
+#testimonial-part .testimonial ul .slick-active button{
+    background: #e23e38;
+    border-color:  #e23e38;
+}
+
+#testimonial-part .testimonial .feedback{
+    position: relative;
+    width: 50%;
+    outline: 0;
+}
+
+#testimonial-part .testimonial .feedback img{
+    width:80px;
+    height:80px;
+    margin-left: 15px;
+}
+
+#testimonial-part .testimonial .feedback .introduce{
+    position: absolute;
+    left:110px;
+    top:0px;
+    text-align: left;
+}
+
+#testimonial-part .testimonial .feedback .introduce h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+#testimonial-part .testimonial .feedback .introduce h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin: 8px 0;
+}
+
+#testimonial-part .testimonial .feedback .introduce .star i{
+    color: #e23e38;
+}
+
+#testimonial-part .testimonial .feedback p{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+/*=====================================================
+                testimonial-part css end
+=====================================================*/
+
+/*=====================================================
+                membership-part css start
+=====================================================*/
+
+#membership-part{
+    padding-top:100px;
+}
+
+#membership-part .item{
+    background: #f1f1f1;
+    transition: .4s;
+}
+
+#membership-part .item h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px 0;
+    transition: .4s;
+    background: #dddddd;
+}
+
+#membership-part .item .bg-one{
+    background: url(../images/membership-part/membership-item-bg-1.png) no-repeat center;
+    background-size: cover;
+}
+
+#membership-part .item .bg-two{
+    background: url(../images/membership-part/membership-item-bg-2.png) no-repeat center;
+    background-size: cover;
+}
+
+#membership-part .item .bg-three{
+    background: url(../images/membership-part/membership-item-bg-3.png) no-repeat center;
+    background-size: cover;
+}
+
+#membership-part .item .img .overlay{
+    background: rgba(0, 0, 0,.8);
+    width: 100%;
+    padding: 40px 0;
+}
+
+#membership-part .item .img .overlay h5{
+    text-align: center;
+    font-size:29px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+#membership-part .item .img .overlay h5 span{
+    font-size: 50px;
+}
+
+#membership-part .item ul{
+    margin: 28px 0;
+}
+
+#membership-part .item ul li{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 13px 0;
+}
+
+#membership-part .item a{
+    text-align: center;
+    font-size:16px;
+    font-weight: 400;
+    color: #222222;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: .4s;
+    width: 100%;
+    background: #dddddd;
+    display: block;
+}
+
+#membership-part .item:hover{
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2); 
+}
+
+#membership-part .item:hover h2{
+    color: #fff;
+    background: #e23e38;
+}
+
+#membership-part .item:hover a{
+    color: #fff;
+    background: #e23e38;
+}
+
+/*=====================================================
+                 membership-part css end
+=====================================================*/
+
+/*=====================================================
+                 client-part css start
+=====================================================*/
+
+#client-part{
+    padding-top:100px;
+}
+
+#client-part .background{
+    background: url(../images/client-part/counter-up-part-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+#client-part .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    padding: 45px 0;
+}
+
+#client-part .overlay .count{
+    text-align: center;
+    display: inline-block;
+}
+
+#client-part .overlay .two{
+    padding-left:27px;
+}
+
+#client-part .overlay .three{
+    padding-left:53px;
+}
+
+#client-part .overlay .four{
+    padding-left:81px;
+}
+
+#client-part .overlay .last{
+    text-align: right;
+}
+
+#client-part .overlay h6{
+    font-size:40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+#client-part .overlay p{
+    font-size:16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*=====================================================
+                 client-part css end
+=====================================================*/
+
+/*=====================================================
+                 class-part css start
+=====================================================*/
+
+#class-part{
+    padding-top:100px;
+}
+
+#class-part .colorful-tab-wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background: transparent!important;
+}
+
+#class-part .colorful-tab-wrapper:before{
+    color: #222222;
+    font-family: 'Oswald', sans-serif; 
+}
+
+#class-part .colorful-tab-wrapper .colorful-tab-menu{
+    background: #f1f1f1;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#class-part .colorful-tab-wrapper .colorful-tab-menu li{
+    transition: .4s;
+}
+
+#class-part .colorful-tab-wrapper .colorful-tab-menu li a{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;    
+    text-transform: uppercase;
+    transition: .4s;
+    background: transparent;
+}
+
+#class-part .colorful-tab-menu .active{
+    background: rgba(226, 62, 56,100)!important;
+}
+
+#class-part .colorful-tab-menu .active a{
+    color: #fff!important;
+}
+
+#class-part .colorful-tab-menu li:hover{
+    background: #e23e38;
+}
+
+#class-part .colorful-tab-menu li:hover a{
+    color: #fff;
+}
+
+#class-part .colorful-tab-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#class-part .colorful-tab-content ul li{
+    width: 20%;
+    height: 218px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #fff;
+    transition: .4s;
+    cursor: pointer;
+    position: relative;
+}
+
+#class-part .colorful-tab-content ul li p{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;    
+    transition: .4s;
+    text-transform: capitalize;
+}
+
+#class-part .colorful-tab-content ul li img{
+    margin: 10px 0;
+}
+
+#class-part .colorful-tab-content ul li .hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .4s;
+}
+
+#class-part .colorful-tab-content ul li .time{
+    color: #444444;
+    font-size: 14px;
+}
+
+#class-part .colorful-tab-content ul li:hover{
+    background: #e23e38; 
+    border-color:  #e23e38; 
+}
+
+#class-part .colorful-tab-content ul li:hover .img{
+    visibility:hidden;
+}
+
+#class-part .colorful-tab-content ul li:hover .hover{
+    opacity: 1;
+}
+
+#class-part .colorful-tab-content ul li:hover p{
+    color: #fff;
+}
+
+/*=====================================================
+                 class-part css end
+=====================================================*/
+
+/*=====================================================
+                 sponsor-part css start
+=====================================================*/
+
+#sponsor-part{
+    padding-top:100px;
+}
+
+#sponsor-part .slick-list{
+    padding: 10px 0!important;
+}
+
+#sponsor-part .container{
+    padding: 0 7.5px;
+}
+
+#sponsor-part .prev{
+    position: absolute;
+    top: 50%;
+    left:-50px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #444444;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#sponsor-part .prev:hover{
+    color: #e23e38;
+}
+
+#sponsor-part .next{
+    position: absolute;
+    top: 50%;
+    right:-50px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #444444;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#sponsor-part .next:hover{
+    color: #e23e38;
+}
+
+#sponsor-part .slick-list .slick-current{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+#sponsor-part .img{
+    width: 210px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+    margin: 0 7.5px;
+}
+
+#sponsor-part .img:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+#sponsor-part .img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*=====================================================
+                 sponsor-part css end
+=====================================================*/
+
+/*=====================================================
+                 footer-part css start
+=====================================================*/
+
+#footer-part{
+    padding-top:100px;
+}
+
+#footer-part .background{
+    background: url(../images/footer-part/footer-part-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+#footer-part .overlay{
+    width: 100%;
+    background: rgba(0, 0, 0,.85);
+    padding-top: 30px;
+}
+
+#footer-part .overlay .logo{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#footer-part .overlay h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 30px 0;
+}
+
+#footer-part .overlay ul{
+    margin-bottom: -10px;
+}
+
+#footer-part .overlay ul li{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ddd;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#footer-part .overlay ul li span{
+    position: absolute;
+    left: 46%;
+    text-align: left;
+}
+
+#footer-part .overlay .twitter-feed .twit{
+    position: relative;
+}
+
+#footer-part .overlay .twitter-feed .last{
+    margin-top: 30px;
+}
+
+#footer-part .overlay .twitter-feed i{
+    color: #1da1f2;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#footer-part .overlay .twitter-feed p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ddd;
+    text-align: left;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 30px;
+}
+
+#footer-part .overlay .twitter-feed .time{
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer-part .overlay .images{
+    margin-bottom: -5px;
+}
+
+#footer-part .overlay .images img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+#footer-part .overlay .contact .info{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#footer-part .overlay .contact .info i{
+    color: #e23e38;
+    font-size: 14px;
+    padding-right: 10px;
+    margin-top: 3px;
+}
+
+#footer-part .overlay .contact p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ddd;
+    text-align: left;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#footer-part .overlay .contact .social{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#footer-part .overlay .contact .icon a i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center!important;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+#footer-part .overlay .contact .icon a i:hover{
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+/*============ designer ============*/
+
+#footer-part .designer{
+    width: 100#;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+#footer-part .designer p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#footer-part .designer p span{
+    color: #e23e38;
+}
+
+#footer-part .designer .name{
+    margin-top: 5px;
+}
+
+/*=====================================================
+                 footer-part css end
+=====================================================*/
+
+/*======== bact to top ========*/
+
+.b-t{
+    display: none;
+}
+
+.b-t i{
+    background: #e23e38;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer; 
+    transition: .4s;
+    z-index: 9999;
+}
+
+.b-t i:hover{
+    background: #313131;
+}

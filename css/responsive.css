@@ -1,0 +1,904 @@
+/*====================================================
+        extra small device responsive css start
+====================================================*/
+
+@media (min-width:320px) and (max-width:575px){
+    
+/*========= header-part (navbar) css start =========*/
+    
+    .header-part{
+        top: 0;
+    }
+    
+    .navbar{
+        background: rgba(226, 62, 56,.8)!important;
+    }
+    
+    .navbar .navbar-brand{
+        background: transparent;
+        position: static;
+        padding:0px 30px;
+        background: #323232;
+    }
+    
+    .navbar ul{
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+    }
+    
+    .navbar ul li a{
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .navbar ul li a:after{
+        width: 0;
+    }
+    
+    .navbar ul li a:hover:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:hover:after{
+        width: 0;
+    }
+    
+/*========= header-part (navbar) css end =========*/
+    
+/*============ banner-part css start =============*/
+    
+    #banner-part .banner .overlay{
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    
+    #banner-part ul li button{
+        width: 13px;
+        height: 13px;
+    }
+    
+    #banner-part .overlay .text{
+        width: auto;
+        margin: 0;
+    }
+    
+    #banner-part .text-left .text{
+        text-align: center;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-l{
+        display: none;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-r{
+        display: none;
+    }
+    
+    #banner-part .overlay .text .line-l{
+        display: none;
+    }
+    
+    #banner-part .overlay .text .line-r{
+        display: none;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-l{
+        display: none;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-r{
+        display: none;
+    }
+    
+    #banner-part .overlay .text h3{
+        font-size: 25px;
+    }
+    
+    #banner-part .overlay .text h1{
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+     
+    #banner-part .overlay .text p{
+        width: auto;
+        font-size: 12px;
+    }
+    
+    #banner-part .overlay .text .right{
+        margin-left: 15px;
+    }
+    
+/*============= banner-part css end ==============*/
+    
+    
+/*============= about-part css start ==============*/
+
+    #about-part .video-part{
+        margin-top: 60px;
+    }
+    
+    .vbox-close{
+        top: 11%;
+        right:0;
+    }
+
+/*============= about-part css end ==============*/
+    
+/*============ gallery-part css start =============*/
+    
+    #gallery-part .gallery .overlay .images .rs-down{ 
+        order:2;
+    }
+    
+    #gallery-part .gallery .overlay .images .rs-up{ 
+        order:1;
+    }
+    
+    .vbox-prev{
+        top:85%;
+        left:12px;
+    }
+    
+    .vbox-next{
+        top:85%;
+        right:12px;
+    }
+    
+/*============= gallery-part css end ==============*/
+    
+/*============= team-part css start ==============*/
+    
+    #team-part .team-member:hover .img{
+        margin-top:0;
+    }
+    
+    #team-part .team-member .img .overlay{
+        transform: scale(.92);
+    }
+    
+    #team-part .team-member .text p{
+        height: auto;
+        opacity: 1;
+        margin-top: 0px;
+    }
+    
+    #team-part .team-member .text{
+        border-color: #dddddd;
+    }
+    
+/*============== team-part css end ===============*/
+    
+/*========== testimonial-part css start ===========*/
+    
+    #testimonial-part .testimonial ul li button{
+        width: 13px;
+        height: 13px;
+    }
+    
+/*=========== testimonial-part css end ============*/
+
+/*========== membership-part css start ===========*/
+    
+    #membership-part .item{
+        margin-top: 30px;
+    }
+    
+    #membership-part .first{
+        margin-top: 0;
+    }
+    
+/*=========== membership-part css end ============*/
+    
+/*============ client-part css start =============*/
+    
+    #client-part .overlay{
+    background: rgba(0, 0, 0, .6);
+    }
+    
+    #client-part .overlay .count{
+        padding: 0;
+    }
+    
+    #client-part .overlay .count h6{
+        font-size: 25px;
+    }
+    
+    #client-part .overlay .count p{
+        font-size: 14px;
+    }
+    
+/*============= client-part css end ==============*/
+    
+/*============ class-part css start ==============*/
+    
+    #class-part .colorful-tab-wrapper .colorful-tab-menu{
+        flex-direction: row;
+    }
+    
+    #class-part .colorful-tab-menu li{
+        padding: 0 25px;
+    }
+    
+    #class-part .colorful-tab-content ul li{
+        width: 50%;  
+    }
+    
+/*============== class-part css end =============*/
+
+/*============ sponsor-part css start ===========*/
+    
+    #sponsor-part .slick-list .slick-current{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.0);
+    }
+    
+    #sponsor-part .slick-list .slick-current:hover{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    }
+    
+    #sponsor-part .prev{
+        top: -15px;
+        left: 10px;
+    }
+    
+    #sponsor-part .next{
+        top:-15px;
+        right: 10px;
+    }
+    
+/*============= sponsor-part css end ============*/
+    
+/*============= back-to-top css ============*/
+    
+    .b-t i{
+        bottom: 20px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+    
+/*====================================================
+        extra small device responsive css end
+====================================================*/
+
+
+
+/*====================================================
+           small device responsive css start
+====================================================*/
+
+@media (min-width:576px) and (max-width:767px){
+    
+/*========= header-part (navbar) css start =========*/
+    
+    .header-part{
+        top: 0;
+    }
+    
+    .navbar{
+        background: rgba(226, 62, 56,.8)!important;
+    }
+    
+    .navbar .navbar-brand{
+        background: transparent;
+        position: static;
+        padding:0px 30px;
+        background: #323232;
+    }
+    
+    .navbar ul{
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+    }
+    
+    .navbar ul li a{
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .navbar ul li a:after{
+        width: 0;
+    }
+    
+    .navbar ul li a:hover:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:hover:after{
+        width: 0;
+    }
+    
+/*========= header-part (navbar) css end =========*/
+    
+/*============ banner-part css start =============*/
+    
+    #banner-part .banner .overlay{
+        padding-top:210px;
+        padding-bottom: 145px;
+    }
+    
+    #banner-part ul li button{
+        width: 13px;
+        height: 13px;
+    }
+    
+    #banner-part .overlay .text{
+        width: auto;
+        margin: 0;
+    }
+    
+    #banner-part .text-left .text{
+        text-align: center;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-l{
+        width: 158px;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-r{
+        width: 154px;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-l{
+        width: 51px;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-r{
+        width: 21px;
+    }
+    
+    #banner-part .overlay .text h3{
+        font-size: 28px;
+    }
+    
+    #banner-part .overlay .text h1{
+        font-size: 55px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+     
+    #banner-part .overlay .text p{
+        width:450px;
+    }
+    
+    #banner-part .overlay .text .right{
+        margin-left: 15px;
+    }
+    
+/*============= banner-part css end ==============*/
+    
+    
+/*============= about-part css start ==============*/
+
+    #about-part .video-part{
+        margin-top: 60px;
+    }
+    
+    .vbox-close{
+        top: 11%;
+        right:0;
+    }
+
+/*============= about-part css end ==============*/
+    
+/*============ gallery-part css start =============*/
+    
+    #gallery-part .gallery .overlay .images .rs-up{
+        order:1; 
+    }
+    
+    .vbox-prev{
+        left:30px;
+    }
+    
+    .vbox-next{
+        right:30px;
+    }
+    
+/*============= gallery-part css end ==============*/
+    
+/*============= team-part css start ==============*/
+    
+    #team-part .team-member:hover .img{
+        margin-top:0;
+    }
+    
+    #team-part .team-member .img .overlay{
+        transform: scale(.92);
+    }
+    
+    #team-part .team-member .text p{
+        height: auto;
+        opacity: 1;
+        margin-top: 0px;
+        padding:0 8px;
+    }
+    
+    #team-part .team-member .text{
+        border-color: #dddddd;
+    }
+    
+/*============== team-part css end ===============*/
+    
+/*========== testimonial-part css start ===========*/
+    
+    #testimonial-part .testimonial ul li button{
+        width: 13px;
+        height: 13px;
+    }
+    
+/*=========== testimonial-part css end ============*/
+
+/*========== membership-part css start ===========*/
+
+    #membership-part .item h2{
+        font-size: 14px;
+    }
+    
+    #membership-part .item .img .overlay{
+        padding: 33px 0;
+    }
+    
+    #membership-part .item .img .overlay h5 {
+        font-size: 23px;
+    }
+    
+    #membership-part .item .img .overlay h5 span {
+        font-size: 40px;
+    }
+    
+    #membership-part .item ul li{
+        font-size: 13px;
+    }
+
+/*=========== membership-part css end ============*/
+    
+/*============ client-part css start =============*/
+    
+    #client-part .overlay{
+    background: rgba(0, 0, 0, .7);
+    }
+    
+    #client-part .overlay .count{
+        padding: 0;
+    }
+    
+    #client-part .overlay .count h6{
+        font-size: 29px;
+    }
+    
+    #client-part .overlay .count p{
+        font-size: 15px;
+    }
+    
+/*============= client-part css end ==============*/
+    
+/*============ class-part css start ==============*/
+    
+    #class-part .colorful-tab-wrapper .colorful-tab-menu{
+        flex-direction: row;
+    }
+    
+    #class-part .colorful-tab-menu li{
+        padding: 0 40px;
+    }
+    
+    #class-part .colorful-tab-content ul li{
+        width: 50%;  
+    }
+    
+/*============== class-part css end =============*/
+
+/*============ sponsor-part css start ===========*/
+    
+    #sponsor-part .prev{
+        top: -15px;
+        left: 10px;
+    }
+    
+    #sponsor-part .next{
+        top:-15px;
+        right: 10px;
+    }
+    
+/*============= sponsor-part css end ============*/
+    
+/*============= footer-part css start ===========*/
+    
+    #footer-part .overlay ul li span{
+        left: 42%;
+    }
+    
+/*============== footer-part css end ============*/
+    
+/*============= back-to-top css ============*/
+    
+    .b-t i{
+        bottom: 20px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+}
+    
+/*====================================================
+            small device responsive css end
+====================================================*/
+
+
+
+/*====================================================
+           medium device responsive css start
+====================================================*/
+
+@media (min-width:768px) and (max-width:991px){
+    
+/*========= header-part (navbar) css start =========*/
+    
+    .header-part{
+        top: 0;
+    }
+    
+    .navbar{
+        background: rgba(226, 62, 56,.8)!important;
+    }
+    
+    .navbar .navbar-brand{
+        background: transparent;
+        position: static;
+        padding:0px 30px;
+        background: #323232;
+    }
+    
+    .navbar ul{
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+    }
+    
+    .navbar ul li a{
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .navbar ul li a:after{
+        width: 0;
+    }
+    
+    .navbar ul li a:hover:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:after{
+        width: 0;
+    }
+    
+    .navbar ul li .active:hover:after{
+        width: 0;
+    }
+    
+/*========= header-part (navbar) css end =========*/
+    
+/*============ banner-part css start =============*/
+    
+    #banner-part ul li button{
+        width: 14px;
+        height: 14px;
+    }
+    
+    #banner-part .prev{
+        left: 25px;
+    }
+    
+    #banner-part .next{
+        right: 25px;
+    }
+    
+    #banner-part .text-left .text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-l{
+        width: 160px;
+    }
+    
+    #banner-part .overlay .text h3 .line-u-r{
+        width: 103px;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-l{
+        width: 59px;
+    }
+    
+    #banner-part .overlay .text .ancore .line-d-r{
+        width: 28px;
+    }
+    
+    #banner-part .overlay .text h3{
+        font-size: 29px;
+    }
+    
+    #banner-part .overlay .text h1{
+        font-size: 57px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+     
+    #banner-part .overlay .text p{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+/*============= banner-part css end ==============*/
+    
+    
+/*============= about-part css start ==============*/
+
+    #about-part .video-part{
+        margin-top: 60px;
+    }
+    
+    .vbox-close{
+        top: 14%;
+        right:14px;
+    }
+
+/*============= about-part css end ==============*/
+    
+/*============ gallery-part css start =============*/
+    
+    .vbox-prev{
+        left:100px;
+    }
+    
+    .vbox-next{
+        right:100px;
+    }
+    
+/*============= gallery-part css end ==============*/
+    
+/*============= team-part css start ==============*/
+    
+    #team-part .team-member:hover .img{
+        margin-top:0;
+    }
+    
+    #team-part .team-member .img .overlay{
+        transform: scale(.92);
+    }
+    
+    #team-part .team-member .text p{
+        height: auto;
+        opacity: 1;
+        margin-top: 0px;
+    }
+    
+    #team-part .team-member .text{
+        border-color: #dddddd;
+    }
+    
+/*============== team-part css end ===============*/
+    
+/*========== testimonial-part css start ===========*/
+    
+    #testimonial-part .testimonial ul li button{
+        width: 15px;
+        height: 15px;
+    }
+    
+/*=========== testimonial-part css end ============*/
+
+/*========== membership-part css start ===========*/
+    
+    #membership-part .item ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+/*=========== membership-part css end ============*/
+    
+/*============ client-part css start =============*/
+    
+    #client-part .overlay .two {
+        padding-left: 7px;
+    }
+    
+    #client-part .overlay .three {
+        padding-left: 13px;
+    }
+    
+    #client-part .overlay .four {
+        padding-left: 22px;
+    }
+    
+    #client-part .overlay .count h6{
+        font-size:34px;
+    }
+    
+    #client-part .overlay .count p{
+        font-size: 15px;
+    }
+    
+/*============= client-part css end ==============*/
+    
+/*============ class-part css start ==============*/
+    
+    #class-part .colorful-tab-wrapper .colorful-tab-menu{
+        flex-direction: row;
+    }
+    
+    #class-part .colorful-tab-content ul li{
+        width: 50%;  
+    }
+    
+/*============== class-part css end =============*/
+
+/*============ sponsor-part css start ===========*/
+    
+    #sponsor-part .prev{
+        top: -15px;
+        left: 10px;
+    }
+    
+    #sponsor-part .next{
+        top:-15px;
+        right: 10px;
+    }
+    
+/*============= sponsor-part css end ============*/
+    
+/*============= back-to-top css ============*/
+    
+    .b-t i{
+        bottom: 20px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
+}
+    
+/*====================================================
+            medium device responsive css end
+====================================================*/
+
+
+/*====================================================
+           large device responsive css start
+====================================================*/
+
+@media (min-width:992px) and (max-width:1199px){
+    
+/*============ banner-part css start =============*/
+    
+    #banner-part .text-left .text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #banner-part .text-left .text p{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+/*============= banner-part css end ==============*/
+    
+    
+/*============= about-part css start ==============*/
+
+    #about-part .video-part{
+        margin-top: 60px;
+    }
+    
+    .vbox-close{
+        top: 20%;
+        right:20px;
+    }
+
+/*============= about-part css end ==============*/
+    
+/*============ gallery-part css start =============*/
+    
+    .vbox-prev{
+        left:175px;
+    }
+    
+    .vbox-next{
+        right:175px;
+    }
+    
+/*============= gallery-part css end ==============*/
+    
+/*============= team-part css start ==============*/
+    
+    #team-part .team-member .text p{
+        width: auto;
+        padding: 0 5px;
+    }
+    
+/*============== team-part css end ===============*/
+
+/*========== membership-part css start ===========*/
+    
+    #membership-part .item ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+/*=========== membership-part css end ============*/
+    
+/*============ client-part css start =============*/
+    
+    #client-part .overlay .two {
+        padding-left: 17px;
+    }
+    
+    #client-part .overlay .three {
+        padding-left: 34px;
+    }
+    
+    #client-part .overlay .four {
+        padding-left: 53px;
+    }
+
+    
+/*============= client-part css end ==============*/
+
+/*============ sponsor-part css start ===========*/
+    
+    #sponsor-part .prev{
+        top: -15px;
+        left: 10px;
+    }
+    
+    #sponsor-part .next{
+        top:-15px;
+        right: 10px;
+    }
+    
+/*============= sponsor-part css end ============*/
+    
+/*============= footer-part css start ===========*/
+    
+    #footer-part .overlay ul li{
+        margin-right: -40px;
+    }
+    
+    #footer-part .overlay ul li span{
+        left: 34%;
+        margin-right: -15px;
+    }
+    
+/*============== footer-part css end ============*/
+    
+/*============= back-to-top css ============*/
+    
+    .b-t i{
+        bottom: 25px;
+        right: 20px;
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        font-size: 19px;
+    }
+}
+    
+/*====================================================
+            large device responsive css end
+====================================================*/
+
+
