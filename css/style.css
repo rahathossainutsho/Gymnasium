@@ -156,6 +156,8 @@ a,a:hover,a:focus {
     width:100%;
 }
 
+/*======== fixed manubar ========*/
+
 .fixed{
     position: fixed;
     top: 0;
@@ -1343,16 +1345,16 @@ a,a:hover,a:focus {
     border-color: #e23e38;
 }
 
-/*============ designer ============*/
+/*======== footer bottom part css start ========*/
 
-#footer-part .designer{
+#footer-part .footer-bottom-part{
     width: 100#;
     border-top: 1px solid #ddd;
     margin-top: 30px;
     padding: 20px 0;
 }
 
-#footer-part .designer p{
+#footer-part .footer-bottom-part p{
     font-size: 13px;
     text-align: center;
     font-weight: 400;
@@ -1361,11 +1363,11 @@ a,a:hover,a:focus {
     font-family: 'Open Sans', sans-serif;
 }
 
-#footer-part .designer p span{
+#footer-part .footer-bottom-part p span{
     color: #e23e38;
 }
 
-#footer-part .designer .name{
+#footer-part .footer-bottom-part .name{
     margin-top: 5px;
 }
 
@@ -1373,7 +1375,7 @@ a,a:hover,a:focus {
                  footer-part css end
 =====================================================*/
 
-/*======== bact to top ========*/
+/*======== bact to top button ========*/
 
 .b-t{
     display: none;
